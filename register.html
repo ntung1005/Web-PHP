@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MaxStore</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Colo Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<style>
+    img {
+        width: 100%;
+    }
+
+    .main {
+        padding: 80px 0;
+
+    }
+
+
+
+    .form {
+        border: 1px solid grey;
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .form .form-title {
+        border-bottom: 1px solid grey;
+        padding: 10px 20px;
+    }
+
+    .form-content {
+        padding: 20px;
+    }
+
+    .form-content input {
+        width: 250px;
+        outline: none;
+        padding: 5px 10px;
+    }
+
+    .form-content button {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+    }
+
+    .main span {
+        color: rgba(14, 11, 39, 0.699);
+        cursor: pointer;
+    }
+
+
+
+
+    .forget-password {
+        display: none;
+    }
+</style>
+
+<body>
+
+
+    <div class="xxx"></div>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcumb">
+            <p> Trang Chủ / <span>Đăng Kí</span></p>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main container">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="login form">
+                        <div class="form-title">
+                            <h5>Tạo Tài Khoản</h5>
+                        </div>
+                        <div class="login-content form-content">
+                            <form action="">
+                                <label for="">
+                                    <span>HỌ</span><br />
+                                    <input type="text" placeholder="Họ" required>
+                                </label>
+                                <br />
+                                <label for="">
+                                    <span>TÊN</span><br />
+                                    <input type="text" placeholder="Tên" required>
+                                </label>
+                                <br />
+                                <label for="">
+                                    <span>EMAIL</span><br />
+                                    <input type="text" placeholder="Email" required>
+                                </label>
+                                <br />
+                                <label for="">
+                                    <span>PASSWORD</span><br />
+                                    <input type="text" placeholder="Mật Khẩu" required>
+                                </label>
+                                <br /><br />
+                                <button type="submit">ĐĂNG KÍ</button>
+                            </form>
+                        </div>
+                    </div>
+                    <br />
+                    <a href="login.html"><span>Trở về</span></a>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <br />
+
+
+        </div>
+    </div>
+
+
+    <!--  -->
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script>
+        $(".btn-forget-password").click(function () {
+            $(".login-content").hide();
+            $(".forget-password").show();
+        })
+
+
+        $(".exit-forget-pasword").click(function () {
+            $(".login-content").show();
+            $(".forget-password").hide();
+        })
+    </script>
+
+
+</body>
+
+</html>
