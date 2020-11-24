@@ -1,3 +1,14 @@
+<?php 
+require 'config/connect.php';
+
+$conn = new DB();
+$conn->connect("localhost","root","","web-php");
+
+var_dump(DB::select("name","users"))
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
